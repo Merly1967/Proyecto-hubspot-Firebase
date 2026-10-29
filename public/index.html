@@ -53,7 +53,7 @@ const mensajeDiv = document.getElementById("mensaje");
 formulario.addEventListener("submit", async (e) => {
 e.preventDefault();
 
-const formData = {
+const datosFormulario = {
 nombre: document.getElementById("nombre").value.trim(),
 apellido: document.getElementById("apellido").value.trim(),
 email: document.getElementById("email").value.trim(),
@@ -87,7 +87,6 @@ mensajeDiv.textContent = "Error: " + resultado.error;
 }
 } catch (error) {
 console.error('Error:', error);
-
 mensajeDiv.style.color = "red";
 mensajeDiv.textContent = "Error de conexión con el servidor local.";
 }

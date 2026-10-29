@@ -53,7 +53,7 @@ const mensajeDiv = document.getElementById("mensaje");
 formulario.addEventListener("submit", async (e) => {
 e.preventDefault();
 
-const DatosFormulario = {
+const datosFormulario = {
 nombre: document.getElementById("nombre").value.trim(),
 apellido: document.getElementById("apellido").value.trim(),
 email: document.getElementById("email").value.trim(),
@@ -71,7 +71,7 @@ method: 'POST',
 headers: {
 'Content-Type': 'application/json'
 },
-body: JSON.stringify(DatosFormulario)
+body: JSON.stringify(datosFormulario)
 });
 
 const result = await response.json();

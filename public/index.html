@@ -77,7 +77,7 @@ body: JSON.stringify(datosFormulario)
 const result = await response.json();
 console.log('Contacto creado con éxito:', result);
 
-if (resul.success) {
+if (result.success) {
 mensajeDiv.style.color = "green";
 mensajeDiv.textContent = "¡Contacto registrado con éxito en HubSpot!";
 formulario.reset();
